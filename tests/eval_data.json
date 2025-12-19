@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1",
+    "question": "Gib mir die Inhalte der Tagesordnung von TOP 2 aus",
+    "gold": "TOP 2 Genehmigung der Tagesordnung der öffentlichen Sitzung Berichterstattung: Präsidentin Klärle Beschlussempfehlung: Der Senat genehmigt die Tagesordnung der öffentlichen Sitzung."
+  },
+  {
+    "id": "2",
+    "question": "Gib mir die Beschlussempfehlung für TOP 4 aus",
+    "gold": "Beschlussempfehlung: Der Senat befürwortet das Go-N-Nachfolgeprojekt."
+  },
+  {
+    "id": "3",
+    "question": "Welche Anlagen hat TOP 5?",
+    "gold": "Keine"
+  },
+  {
+    "id": "4",
+    "question": "Welche Anlage hat TOP 6",
+    "gold": "Entwurf des Leitbilds Lehren und Lernen an der DHBW"
+  },
+  {
+    "id": "5",
+    "question": "Was ist der Sachstand von TOP 7",
+    "gold": "Die Studien- und Prüfungsordnung für den Studiengang International Business Management Trinational wird in der Neufassung dem Senat zur Beschlussfassung gegeben. Die Fachkommission Wirtschaft hat der Neufassung der Satzung in ihrer Sitzung im Juli 2025 zugestimmt. Eine Beschlussfassung in der Qualitätssicherungskommission erfolgte im Umlauf."
+  },
+  {
+    "id": "6",
+    "question": "Welche TOPs sind im hochschulöffentlichen Teil?",
+    "gold": "TOP 1, TOP 2  Begrüßung, TOP 3  Verabschiedung der DHBW Grundordnung, TOP 4 Nachfolgeprojekt Go-N, TOP 5 Sachstandsbericht aktuelle Governancestruktur, TOP 6  Leitbild Lehren und Lernen an der DHBW, TOP 7  StuPrO International Business Management – Trinational, TOP 8  Wesentliche Änderung «International Business Management Trinational», TOP 9 Portfolioentscheidung «Soziale Arbeit», TOP 10  StIL-Ausschreibung „Die Welt ist mein Campus“, TOP 11 Verschiedenes öffentlich"
+  },
+  {
+    "id": "7",
+    "question": "Was ist der Grund, dass TOP 6 in die Tagesordnung aufgenommen wurde?",
+    "gold": "Begründung für die Aufnahme des TOP: Die seit August 2025 gültige Studienakkreditierungsverordnung sieht vor, dass die Hochschule über zentrale Bildungsziele für die Lehre, die sich in einem Leitbild der Hochschule und in den Curricula der Studiengänge widerspiegeln, verfügt. Die DHBW hat einen im Jahr 2019 begonnen und durch Corona unterbrochenen Leitbildprozess 2024 erneut aufgenommen und in einem sehr stark beteiligungsorien tierten Verfahren ein entsprechendes Leitbild entwickelt. Das Leitbild Lehren und Lernen der DHBW beschreibt das Selbstverständnis der DHBW zum Lehren und Lernen. Damit soll die Identifikation mit den gemeinsamen Zielen gestärkt werden. Die zentralen Gremien sollen in diesen Prozess einbezogen werden."
+  },
+  {
+    "id": "8",
+    "question": "Was ist die Rechtliche Grundlage für TOP 9?",
+    "gold": "§ 19 Absatz 1 Satz 2 Nummer 7 LHG, §§16-18 Akkreditierungssatzung\n"
+  },
+  {
+    "id": "9",
+    "question": "Wer macht die Berichterstattung bei TOP 3 Verabschiedung der DHBW Grundordnung?",
+    "gold": "Berichterstattung: Prof. Dr. Stefan Krause"
+  },
+  {
+    "id": "10",
+    "question": "Um wie viel Uhr ist die Mittagspause geplant?",
+    "gold": "Mittagspause (12:30 – 13:30 Uhr)"
+  },
+  {
+    "id": "11",
+    "question": "In welchem TOP werden die Themen „Verschiedenes öffentlich“ besprochen?",
+    "gold": "TOP 11"
+  },
+  {
+    "id": "12",
+    "question": "Wann startet der nichtöffentliche Teil der Sitzung? ",
+    "gold": "Nichtöffentlicher Teil der Sitzung (ab 13:30 Uhr)"
+  },
+  {
+    "id": "13",
+    "question": "Welcher TOP beschäftigt sich mit der Portfolioentscheidung Soziale Arbeit",
+    "gold": "TOP 9"
+  },
+  {
+    "id": "14",
+    "question": "An welchem Tag und Ort findet die 101. Sitzung des Senats der DHBW statt?",
+    "gold": "Am 14. Oktober 2025 an der DHBW Villingen-Schwenningen"
+  },
+  {
+    "id": "15",
+    "question": "Was ist die Beschlussempfehlung von TOP 4 ",
+    "gold": "Der Senat befürwortet das Go-N-Nachfolgeprojekt."
+  }
+]
