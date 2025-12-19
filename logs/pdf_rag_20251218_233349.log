@@ -1,0 +1,370 @@
+[2025-12-18T23:33:53] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Initialisiere PDFRAG-Komponenten
+[2025-12-18T23:33:53] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [EMBED_INIT_OLLAMA] model=qwen3-embedding:0.6b
+[2025-12-18T23:33:53] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] init path=./vector_db, collection=pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [RERANK_INIT_OFFLINE] model=./models/ms-marco-MiniLM-L-12-v2
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Starte Ingestion aus Verzeichnis: ./pdfs
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: Liste Dateien in ./pdfs
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 04 - Nachfolgeprojekt Go-N.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 07 - StuPrO IBMT.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion: gefundenes Entry: pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf (is_file=True, suffix=.pdf)
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=1 raw_chars=1516 cleaned_chars=1413
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=2 raw_chars=1772 cleaned_chars=1676
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=3 raw_chars=2680 cleaned_chars=2590
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=4 raw_chars=1173 cleaned_chars=1070
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=5 raw_chars=1655 cleaned_chars=1567
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=6 raw_chars=2013 cleaned_chars=1906
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=7 raw_chars=467 cleaned_chars=419
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=1
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=2
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=3
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-Tagesordnung 101. Sitzung Senat_14-10-2025.pdf page=6
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=1 raw_chars=2047 cleaned_chars=1962
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=2 raw_chars=2817 cleaned_chars=2745
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=3 raw_chars=2516 cleaned_chars=2441
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=4 raw_chars=2815 cleaned_chars=2741
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=5 raw_chars=2157 cleaned_chars=2073
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=6 raw_chars=959 cleaned_chars=918
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=7 raw_chars=1187 cleaned_chars=1135
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=8 raw_chars=1325 cleaned_chars=1212
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=9 raw_chars=1204 cleaned_chars=1103
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=10 raw_chars=1371 cleaned_chars=1334
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=11 raw_chars=1882 cleaned_chars=1818
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=12 raw_chars=2221 cleaned_chars=2172
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=13 raw_chars=2731 cleaned_chars=2671
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=14 raw_chars=2968 cleaned_chars=2894
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=15 raw_chars=2312 cleaned_chars=2238
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=16 raw_chars=1696 cleaned_chars=1636
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=17 raw_chars=2497 cleaned_chars=2437
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=18 raw_chars=2408 cleaned_chars=2339
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=19 raw_chars=2920 cleaned_chars=2851
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=20 raw_chars=2256 cleaned_chars=2198
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=21 raw_chars=2934 cleaned_chars=2869
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=22 raw_chars=2547 cleaned_chars=2489
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=23 raw_chars=2316 cleaned_chars=2258
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=24 raw_chars=1963 cleaned_chars=1903
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=25 raw_chars=2258 cleaned_chars=2197
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=26 raw_chars=1726 cleaned_chars=1668
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=27 raw_chars=2396 cleaned_chars=2328
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=28 raw_chars=2201 cleaned_chars=2139
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=29 raw_chars=2916 cleaned_chars=2854
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=30 raw_chars=2069 cleaned_chars=2022
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=31 raw_chars=2146 cleaned_chars=2079
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=32 raw_chars=2543 cleaned_chars=2472
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=33 raw_chars=3026 cleaned_chars=2956
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=34 raw_chars=2154 cleaned_chars=2085
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=35 raw_chars=1302 cleaned_chars=1262
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=36 raw_chars=1187 cleaned_chars=1135
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=37 raw_chars=1325 cleaned_chars=1212
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=38 raw_chars=1204 cleaned_chars=1103
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=39 raw_chars=1371 cleaned_chars=1334
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=40 raw_chars=1882 cleaned_chars=1818
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=41 raw_chars=2221 cleaned_chars=2172
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=42 raw_chars=2731 cleaned_chars=2671
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=43 raw_chars=2968 cleaned_chars=2894
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=44 raw_chars=2312 cleaned_chars=2238
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=45 raw_chars=1696 cleaned_chars=1636
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=46 raw_chars=2497 cleaned_chars=2437
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=47 raw_chars=2408 cleaned_chars=2339
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=48 raw_chars=2920 cleaned_chars=2851
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=49 raw_chars=2256 cleaned_chars=2198
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=50 raw_chars=2934 cleaned_chars=2869
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=51 raw_chars=2547 cleaned_chars=2489
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=52 raw_chars=2316 cleaned_chars=2258
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=53 raw_chars=1963 cleaned_chars=1903
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=54 raw_chars=2258 cleaned_chars=2197
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=55 raw_chars=1726 cleaned_chars=1668
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=56 raw_chars=2396 cleaned_chars=2328
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=57 raw_chars=2201 cleaned_chars=2139
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=58 raw_chars=2916 cleaned_chars=2854
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=59 raw_chars=2069 cleaned_chars=2022
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=60 raw_chars=2146 cleaned_chars=2079
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=61 raw_chars=2543 cleaned_chars=2472
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=62 raw_chars=3026 cleaned_chars=2956
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=63 raw_chars=2154 cleaned_chars=2085
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=64 raw_chars=1302 cleaned_chars=1262
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=65 raw_chars=1595 cleaned_chars=1530
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=66 raw_chars=1338 cleaned_chars=1225
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=67 raw_chars=1243 cleaned_chars=1142
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=68 raw_chars=1415 cleaned_chars=1376
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=69 raw_chars=2058 cleaned_chars=1989
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=70 raw_chars=2317 cleaned_chars=2258
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=71 raw_chars=2801 cleaned_chars=2741
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=72 raw_chars=3105 cleaned_chars=3026
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=73 raw_chars=3159 cleaned_chars=3065
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=74 raw_chars=1835 cleaned_chars=1770
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=75 raw_chars=2540 cleaned_chars=2478
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=76 raw_chars=2577 cleaned_chars=2501
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=77 raw_chars=3350 cleaned_chars=3270
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=78 raw_chars=3175 cleaned_chars=3094
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=79 raw_chars=3950 cleaned_chars=3859
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=80 raw_chars=2763 cleaned_chars=2698
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=81 raw_chars=2698 cleaned_chars=2631
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=82 raw_chars=2875 cleaned_chars=2789
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=83 raw_chars=3003 cleaned_chars=2922
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=84 raw_chars=4261 cleaned_chars=4151
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=85 raw_chars=2523 cleaned_chars=2453
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=86 raw_chars=2287 cleaned_chars=2218
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=87 raw_chars=4065 cleaned_chars=3973
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=88 raw_chars=2314 cleaned_chars=2251
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=89 raw_chars=2289 cleaned_chars=2214
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=90 raw_chars=3091 cleaned_chars=3004
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=91 raw_chars=3547 cleaned_chars=3464
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=92 raw_chars=2289 cleaned_chars=2217
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 03 - Verabschiedung DHBW Grundordnung_13.10.2025.pdf page=93 raw_chars=1769 cleaned_chars=1704
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 04 - Nachfolgeprojekt Go-N.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 04 - Nachfolgeprojekt Go-N.pdf page=1 raw_chars=2158 cleaned_chars=2074
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 04 - Nachfolgeprojekt Go-N.pdf page=2 raw_chars=1174 cleaned_chars=1100
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=1 raw_chars=2161 cleaned_chars=2094
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=2 raw_chars=1373 cleaned_chars=1317
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=3 raw_chars=1908 cleaned_chars=1865
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=4 raw_chars=2688 cleaned_chars=2614
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=5 raw_chars=2557 cleaned_chars=2477
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=4
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 06 - Leitbild Lehre_NEU.pdf page=5
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 07 - StuPrO IBMT.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=1 raw_chars=1716 cleaned_chars=1651
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=2 raw_chars=744 cleaned_chars=716
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=3 raw_chars=1291 cleaned_chars=1248
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=4 raw_chars=3585 cleaned_chars=3521
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=5 raw_chars=2844 cleaned_chars=2777
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=6 raw_chars=2889 cleaned_chars=2817
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=7 raw_chars=2380 cleaned_chars=2315
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=8 raw_chars=2699 cleaned_chars=2618
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=9 raw_chars=2651 cleaned_chars=2577
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=10 raw_chars=2273 cleaned_chars=2203
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=11 raw_chars=2711 cleaned_chars=2643
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=12 raw_chars=2804 cleaned_chars=2742
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=13 raw_chars=1425 cleaned_chars=1365
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=14 raw_chars=3573 cleaned_chars=3508
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=15 raw_chars=3987 cleaned_chars=3925
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=16 raw_chars=3882 cleaned_chars=3817
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=17 raw_chars=3760 cleaned_chars=3698
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=18 raw_chars=3943 cleaned_chars=3879
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=19 raw_chars=3834 cleaned_chars=3774
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=20 raw_chars=434 cleaned_chars=417
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 07 - StuPrO IBMT.pdf page=21 raw_chars=39 cleaned_chars=29
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=1 raw_chars=2588 cleaned_chars=2524
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=2 raw_chars=3492 cleaned_chars=3434
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=3 raw_chars=807 cleaned_chars=768
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=4 raw_chars=2142 cleaned_chars=2062
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=5 raw_chars=2808 cleaned_chars=2727
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=6 raw_chars=2844 cleaned_chars=2629
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=7 raw_chars=810 cleaned_chars=781
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=8 raw_chars=2123 cleaned_chars=1923
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=9 raw_chars=5214 cleaned_chars=5125
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=10 raw_chars=6923 cleaned_chars=6826
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=11 raw_chars=4941 cleaned_chars=4835
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=12 raw_chars=4225 cleaned_chars=4151
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=13 raw_chars=3946 cleaned_chars=3872
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=14 raw_chars=731 cleaned_chars=706
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=15 raw_chars=1042 cleaned_chars=918
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=16 raw_chars=1591 cleaned_chars=1219
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17 raw_chars=2555 cleaned_chars=1807
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18 raw_chars=2992 cleaned_chars=1543
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=19 raw_chars=595 cleaned_chars=506
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=5
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=6
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=6
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=6
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=6
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=8
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=13
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=17
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [TABLE] pdfs\101-TOP 09 - Portfolioentscheidung Bachelor Soziale Arbeit.pdf page=18
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Verarbeite PDF: pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=1 raw_chars=2318 cleaned_chars=2261
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=2 raw_chars=2448 cleaned_chars=2387
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=3 raw_chars=2584 cleaned_chars=2536
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=4 raw_chars=3028 cleaned_chars=2980
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=5 raw_chars=2994 cleaned_chars=2947
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=6 raw_chars=2861 cleaned_chars=2810
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=7 raw_chars=2853 cleaned_chars=2801
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=8 raw_chars=2545 cleaned_chars=2498
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=9 raw_chars=2972 cleaned_chars=2922
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=10 raw_chars=3160 cleaned_chars=3108
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=11 raw_chars=2943 cleaned_chars=2896
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=12 raw_chars=3040 cleaned_chars=2989
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=13 raw_chars=2911 cleaned_chars=2861
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=14 raw_chars=3117 cleaned_chars=3066
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=15 raw_chars=2738 cleaned_chars=2689
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=16 raw_chars=3079 cleaned_chars=3024
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=17 raw_chars=3299 cleaned_chars=3181
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=18 raw_chars=2592 cleaned_chars=2546
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=19 raw_chars=2958 cleaned_chars=2905
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=20 raw_chars=2093 cleaned_chars=2022
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=21 raw_chars=2387 cleaned_chars=2328
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=22 raw_chars=2532 cleaned_chars=2380
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=23 raw_chars=147 cleaned_chars=132
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=24 raw_chars=2615 cleaned_chars=2562
+[2025-12-18T23:33:54] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=25 raw_chars=2043 cleaned_chars=2008
+[2025-12-18T23:33:55] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PDF] pdfs\101-TOP 10 - StIL-Ausschreibung Die Welt ist mein Campus.pdf page=26 raw_chars=1260 cleaned_chars=1245
+[2025-12-18T23:35:05] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [EMBED_OLLAMA] model=qwen3-embedding:0.6b items=435 dim=1024
+[2025-12-18T23:35:05] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] add START count=435
+[2025-12-18T23:35:06] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] add DONE count=435
+[2025-12-18T23:35:06] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] Ingestion abgeschlossen. Dokumente: 435
+[2025-12-18T23:38:56] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] QUERY_START Frage: Was sind die Kurzfristigen änderungen im Grundordnungstext?
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [EMBED_OLLAMA] model=qwen3-embedding:0.6b items=1 dim=1024
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] search START k=5
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] search RESULTS:
+  rank=1 id=-7714008983062586258 distance=0.8641 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=2 id=5676266231916232121 distance=0.8641 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=3 id=-1331140386884091731 distance=0.8641 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=4 id=-2251897021609225721 distance=0.8641 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=5 id=-8677170963716390868 distance=0.8641 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [VDB] search END
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] FIRST_RETRIEVAL Ergebnisse START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+[PIPELINE] FIRST_RETRIEVAL Ergebnisse ENDE
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [RERANK] START query=Was sind die Kurzfristigen änderungen im Grundordnungstext? doc_count=3
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [RERANK] RESULTS:
+  rank=1 index=0 score=6.7250 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=2 index=2 score=6.7250 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+  rank=3 index=1 score=6.7250 text_START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+text_END
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [RERANK] END
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] RERANKED Ergebnisse START
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+[PIPELINE] RERANKED Ergebnisse ENDE
+[2025-12-18T23:38:57] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [LLM_CALL] [QID=e5a7957d-9c8a-4c34-82a9-c53a619c47f7] [TAG=GAP_ANALYSIS] PROMPT_START
+
+Du bewertest, ob die vorhandenen Informationen ausreichen, um eine Frage zu beantworten.
+
+Aufgabe:
+1. Prüfe, ob die Frage mit dem gegebenen Kontext inhaltlich vollständig und präzise beantwortet werden kann.
+2. Wenn die Informationen ausreichen, gib **exakt** folgendes zurück:
+   NONE
+3. Wenn wichtige Informationen fehlen, dann:
+   - formuliere bis zu DREI kurze, präzise Suchanfragen,
+   - jede Suchanfrage in einer **separaten Zeile**,
+   - KEINE Nummerierung, KEINE Bulletpoints,
+   - auf DEUTSCH,
+   - fokussiere dich nur auf Informationen, die wirklich für eine korrekte Beantwortung der Frage fehlen.
+
+Frage:
+Was sind die Kurzfristigen änderungen im Grundordnungstext?
+
+Kontext (Auszüge aus Dokumenten):
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+
+WICHTIGES OUTPUT-FORMAT:
+- Wenn alles ausreichend beantwortet ist:
+  NONE
+- Wenn etwas Wichtiges fehlt:
+  (bis zu drei Suchanfragen, jeweils in einer eigenen Zeile, ohne zusätzliche Erklärungen)
+
+PROMPT_END
+[2025-12-18T23:39:02] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [LLM_RESP] [QID=e5a7957d-9c8a-4c34-82a9-c53a619c47f7] [TAG=GAP_ANALYSIS] RESP_START
+NONE
+RESP_END
+[2025-12-18T23:39:02] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] GAP_ANALYSE: Keine zusätzlichen Suchanfragen nötig (NONE).
+[2025-12-18T23:39:02] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [LLM_CALL] [QID=01bc17db-d68b-45c1-a308-d179d857190a] [TAG=ANSWER_COMBINE] PROMPT_START
+
+Du erhältst eine Benutzerfrage und mehrere Textausschnitte aus PDF-Dokumenten.
+
+Aufgabe:
+- Beantworte die Frage NUR auf Basis der bereitgestellten Informationen.
+- Erfinde KEINE zusätzlichen Fakten.
+- Wenn die Informationen nicht ausreichen, um die Frage sicher zu beantworten,
+  dann sage das explizit und formuliere eine möglichst knappe Antwort,
+  die klar macht, welche Informationen fehlen.
+- Wenn die Informationen ausreichen, formuliere eine kurze, präzise und sachliche Antwort.
+- Halte dich inhaltlich so eng wie möglich an die bereitgestellten Texte.
+
+Frage:
+Was sind die Kurzfristigen änderungen im Grundordnungstext?
+
+Informationen (Ausschnitte aus den Dokumenten):
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+---
+[page 5] Themen Wahlen, Amtsträgerinnen und Amtsträger, Gleichstellung sowie Gremien wurden geschaffen. Kurzfristige Anpassungen im Grundordnungstext: Ende KW 41 mussten weitere Hinweise des MWK verarbeitet werden, um die Zustimmungsfähigkeit der Grundordnung abzusichern. Diese Hinweise und einige redaktionelle Änderungen sind sämtlich türkis hinterlegt. Inhaltlich gewichtige Änderungen sind: - § 5 Überarbeitete Passagen zur Definition und Aufnahme von LHG-Verweisen zur SüFak - § 19 + § 28 Überörtlicher Fakultätsrat und Fakultätsrat: Akademische Mitarbeitende und sonstige Mitarbeitende in getrennten Gruppen, um den Wählerwillen besser abbilden zu können - § 28 großer Fakultätsrat: Änderung der Auflistung bezüglich Hochschullehrer*innen ohne Wahl - § 33 Aufnahme eines Satzes 3, um vier Fachbereiche möglich zu machen - § 44 Anpassungen zum Inkrafttreten der Grundordnung An einigen Stellen sind sprachliche Änderungen und Änderungen von Verweisen ebenfalls durch farbliche Hinterlegung in den Anlagen 2 (ab Seite 36) und 3 (ab Seite 65) kenntlich gemacht.
+
+Antwort (kurz und präzise):
+
+PROMPT_END
+[2025-12-18T23:39:04] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [LLM_RESP] [QID=01bc17db-d68b-45c1-a308-d179d857190a] [TAG=ANSWER_COMBINE] RESP_START
+Leider fehlen mir genügend Informationen, um sicherzustellen, dass die Kurzfristigen Änderungen im Grundordnungstext genau bezeichnet werden können. Die bereitgestellten Texte enthalten zwar eine Liste der geänderten Abschnitte, aber es ist nicht klar, welche spezifischen Änderungen in diesen Abschnitten vorgenommen wurden.
+RESP_END
+[2025-12-18T23:39:04] [RUN=a5c1e2f2-c230-4565-aed4-c4eacc05d721] [PIPELINE] QUERY_END (enhanced, ohne zweiten Retrieval-Pass)

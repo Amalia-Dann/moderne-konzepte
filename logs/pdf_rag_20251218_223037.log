@@ -1,0 +1,45 @@
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] Initialisiere PDFRAG-Komponenten
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [EMBED_INIT_OLLAMA] model=qwen3-embedding:0.6b
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [VDB] init path=./vector_db, collection=pdfs
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [RERANK_INIT_OLLAMA] model=sam860/qwen3-reranker:0.6b-Q8_0
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] Starte Ingestion aus Verzeichnis: ./pdfs
+[2025-12-18T22:30:38] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] WARNUNG: Keine Dokumente gefunden, Ingestion beendet.
+[2025-12-18T22:30:45] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] QUERY_START Frage: wo ist die sitzung?
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [EMBED_OLLAMA] model=qwen3-embedding:0.6b items=1 dim=1024
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [VDB] search START k=10
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [VDB] search RESULTS:
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [VDB] search END
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] FIRST_RETRIEVAL Ergebnisse START
+
+[PIPELINE] FIRST_RETRIEVAL Ergebnisse ENDE
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [RERANK_OLLAMA] keine Dokumente übergeben, Rückgabe: []
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] RERANKED Ergebnisse START
+
+[PIPELINE] RERANKED Ergebnisse ENDE
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] SIMPLE_MODE oder GAP_ANALYSE deaktiviert (RAG_MODE=simple, ENABLE_GAP_RETRIEVAL=False)
+[2025-12-18T22:30:49] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [LLM_CALL] [QID=e25d4332-1284-427f-9399-61457b9303cc] [TAG=ANSWER_COMBINE] PROMPT_START
+
+Du erhältst eine Benutzerfrage und mehrere Textausschnitte aus PDF-Dokumenten.
+
+Aufgabe:
+- Beantworte die Frage NUR auf Basis der bereitgestellten Informationen.
+- Erfinde KEINE zusätzlichen Fakten.
+- Wenn die Informationen nicht ausreichen, um die Frage sicher zu beantworten,
+  dann sage das explizit und formuliere eine möglichst knappe Antwort,
+  die klar macht, welche Informationen fehlen.
+- Wenn die Informationen ausreichen, formuliere eine kurze, präzise und sachliche Antwort.
+- Halte dich inhaltlich so eng wie möglich an die bereitgestellten Texte.
+
+Frage:
+wo ist die sitzung?
+
+Informationen (Ausschnitte aus den Dokumenten):
+
+
+Antwort (kurz und präzise):
+
+PROMPT_END
+[2025-12-18T22:30:54] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [LLM_RESP] [QID=e25d4332-1284-427f-9399-61457b9303cc] [TAG=ANSWER_COMBINE] RESP_START
+Es tut mir leid, aber ohne weitere Informationen kann ich nicht genau bestimmen, wo die Sitzung stattfindet. Die bereitgestellten Texte enthalten keine spezifischen Hinweise auf den Ort der Sitzung.
+RESP_END
+[2025-12-18T22:30:54] [RUN=618f6376-f13c-4928-85b9-3cad02fec342] [PIPELINE] QUERY_END (simple / no-gap)

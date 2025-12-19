@@ -1,0 +1,6 @@
+[2025-12-18T22:36:05] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [PIPELINE] Initialisiere PDFRAG-Komponenten
+[2025-12-18T22:36:05] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [EMBED_INIT_OLLAMA] model=qwen3-embedding:0.6b
+[2025-12-18T22:36:06] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [VDB] init path=./vector_db, collection=pdfs
+[2025-12-18T22:36:06] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [RERANK_INIT_OLLAMA] model=sam860/qwen3-reranker:0.6b-Q8_0
+[2025-12-18T22:36:06] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [PIPELINE] Starte Ingestion aus Verzeichnis: ./pdfs
+[2025-12-18T22:36:06] [RUN=e9bd81ce-1565-4f9d-98ca-8246b82ece1a] [PIPELINE] WARNUNG: Keine Dokumente gefunden, Ingestion beendet.
