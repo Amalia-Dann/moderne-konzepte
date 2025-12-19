@@ -9,9 +9,9 @@ import numpy as np
 import torch
 
 # ===== OFFLINE ENFORCEMENT =====
-os.environ["HF_HUB_OFFLINE"] = "1"
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"] = "1"
+#s.environ["HF_HUB_OFFLINE"] = "1"
+#os.environ["TRANSFORMERS_OFFLINE"] = "1"
+#os.environ["HF_DATASETS_OFFLINE"] = "1"
 
 # ===== RUN IDENTIFICATION =====
 # Eindeutige ID pro Programmlauf (nützlich für spätere Auswertung)
@@ -46,7 +46,7 @@ def set_global_seed(seed: int = RANDOM_SEED):
 
 # ===== MODELS =====
 EMBED_MODEL = "qwen3-embedding:0.6b"
-RERANK_MODEL = "./models/ms-marco-MiniLM-L-12-v2"
+RERANK_MODEL = "cross-encoder/ms-marco-MiniLM-L-12-v2"
 
 # ===== PATHS =====
 PDF_DIR = "./pdfs"
